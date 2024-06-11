@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/signup.css">
+</head>
+<body>
+    <%- include('includes/menu.ejs') %>
+    <div id="form-container">
+        <form action="/signup" method="post">
+            <% if(Error){ %>
+                <h1><%= Error.message %></h1>
+                <% } %>
+            <h2>Signup</h2>
+              <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="<%=Error.email%>" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" value="<%=Error.password%>" required>
+                <label for="street">Street</label>
+                <input type="text" name="street" id="street" value="<%= Error.street %>" required>
+                <label for="unicode">Pincode</label>
+                <input type="text" name="unicode" id="unicode" value="<%=Error.unicode %>"required>
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" value="<%= Error.city %>" required >
+                <div id="btn">
+                    <button type="submit">Signup</button>
+                </div>
+                <div id="para">
+                    <p >You already signup? <a id="login" href="/login">Login</a> click me</p>
+                </div>
+        </form>
+    </div>
+       
+</body>
+</html>

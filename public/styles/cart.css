@@ -1,0 +1,27 @@
+
+.cartcontainer{
+    width: 250px;
+    height: 300px;  
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+#cart{
+    text-align: center;
+}
+#cartinfo{
+    color: black;
+}
+#btn{
+    padding: 5px;
+    font-size: 15px;
+    color: black;
+    background-color: rgb(63,79,232);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: aqua;
+}
+

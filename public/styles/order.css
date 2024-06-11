@@ -1,0 +1,16 @@
+#btn{
+    padding: 5px;
+    font-size: 15px;
+    color: black;
+    background-color: rgb(63,79,232);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: aqua;
+}
+option{
+    padding: 10px;
+    color: black;
+}

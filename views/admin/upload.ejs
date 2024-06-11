@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itemsupload</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/uploadimage.css">
+    
+</head>
+<body>
+    <%- include('includes/menu.ejs') %>
+    <div id="container">
+        <form action="/admin/upload" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="title">Title</label>
+                <input type="title" name="title" id="title" required>
+            </div>
+            <div>
+                <input type="file" name="images" id="images" accept="image/*" required>
+            </div>
+            <div>
+                <label for="summary">Summary</label>
+                <input type="text" name="summary" id="summary" required>
+            </div>
+            <div>
+            <label for="price">price</label>
+            <input type="text" name="price" id="price" required>
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <textarea name="description" id="description"></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+            <div>
+                <button >resets</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

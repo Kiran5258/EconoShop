@@ -1,0 +1,22 @@
+{
+  "name": "e-commerence",
+  "version": "1.0.0",
+  "description": "Login authenciation and authorization",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "connect-mongodb-session": "^5.0.0",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mongodb": "^6.5.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.0"
+  }
+}

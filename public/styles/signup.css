@@ -1,0 +1,55 @@
+#form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+form{
+    background-color: rgb(168,255,255);
+    padding:15px 20px;
+    width: 400px;
+    border-radius: 4px;
+}
+form input{
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 8px 18px;
+    font-size: 18px;
+}
+
+label{
+    text-transform: uppercase;
+    text-align: center;
+}
+#btn{
+    text-align: center;
+}
+button{
+    background-color: rgb(63,79,232);
+    border: none;
+    padding:10px 15px;
+    color: white;
+}
+button:hover{
+    background-color: rgb(24, 175, 175);
+}
+
+#login{
+    text-align: center;
+    color: black;
+    border: none;
+    font-size: 18px;
+}
+#login:hover{
+    color: rgb(96,106,116);
+}
+#para{
+    font-size: 18px;
+}
