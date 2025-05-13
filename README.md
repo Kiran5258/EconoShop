@@ -23,12 +23,19 @@
 EconoShop/
 
 ├── database/
+
 ├── images/
+
 ├── public/
+
 ├── routes/
+
 ├── views/
+
 ├── app.js
+
 ├── package.json
+
 └── README.md 
 ## 📦 Installation
 
