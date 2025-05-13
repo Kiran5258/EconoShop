@@ -21,6 +21,7 @@
 ## 📁 Project Structure
 
 EconoShop/
+
 ├── database/
 ├── images/
 ├── public/
